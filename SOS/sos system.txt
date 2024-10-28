@@ -1,0 +1,59 @@
+1. React:-
+
+     Package Name: react
+
+     Purpose: 
+         *React is a JavaScript library for building user interfaces. 
+         *It allows you to create reusable UI components that manage their own state, and React's virtual DOM makes the updates to the UI efficient.
+
+     Usage in the Project:
+         *Building the core UI components like UserLogin, LocationTracker, and ManageContacts.
+         *Handling user inputs, form validation, and interactions.
+         *Managing state (e.g., contact lists, phone number input, and user location) using React’s useState and useEffect hooks.
+
+2. React Router DOM:-
+
+     Package Name: react-router-dom
+
+     Purpose: Provides routing capabilities for React applications, allowing you to create multi-page applications with dynamic routing.
+
+     Usage in the Project:
+         *Enabling navigation between the User Login, Location Tracker, and Manage Contacts pages.
+         *Using components like <BrowserRouter>, <Routes>, and <Route> to define paths and link components to specific URLs.
+         *Using useNavigate to programmatically navigate between pages, such as when a user successfully logs in.
+
+3. JavaScript Geolocation API (Browser API):-
+
+     Purpose: 
+         Although not a standalone package, this is an important part of the project. The Geolocation API allows access to the user’s current 
+         location through the browser.
+
+     Usage in the Project:
+         *Fetching the User’s Location: Using navigator.geolocation.getCurrentPosition() to get the latitude and longitude.
+         *Handling successful location retrieval or errors (e.g., if the user denies location access).
+         *Displaying the fetched coordinates on a Google Maps embedded map using an iframe.
+
+4. Google Maps Embed API:-
+
+     Purpose: Integrates Google Maps directly into the web application using an iframe.
+
+     Usage in the Project:
+         *Embedding a Google Map to display the user’s location on the Location Tracker page.
+         *Constructing the map URL with the user's latitude and longitude coordinates so that the map centers on the user’s current position.
+
+5. CSS (App.css)
+
+     Purpose: For styling the components and ensuring the application has a responsive and clean design.
+
+     Usage in the Project:
+         *Custom styling for error messages, success messages, contact list items, buttons, and map display.
+         *Basic layout management for the different pages to ensure a consistent look and feel across the app.
+         *Development Environment
+
+VS Code (Visual Studio Code): 
+     This is typically the development environment used for creating React applications, providing features like syntax highlighting, extensions 
+     for React and JavaScript, and Git integration.
+
+Node.js and npm: 
+     Necessary for managing dependencies and running the React development server. React is often initialized using create-react-app to set up
+      the initial structure of the project.

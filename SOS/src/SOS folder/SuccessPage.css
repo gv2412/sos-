@@ -1,0 +1,56 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f4f8;
+    color: #333;
+    text-align: center;
+  }
+  
+  .checkmark-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #4caf50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .checkmark {
+    width: 60px;
+    height: 30px;
+    border: solid #fff;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg);
+    animation: drawCheckmark 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes drawCheckmark {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 60px;
+      height: 0;
+    }
+    100% {
+      width: 60px;
+      height: 30px;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,66 @@
+This project is a React-based web application designed to help users manage emergency contacts and share their live location with those contacts. 
+The project includes several key features, organized into different pages:
+
+1. User Login Page:-
+
+       Purpose: This page allows users to log in by entering their name and phone number.
+
+       Phone Validation: It ensures that the entered phone number is exactly 10 digits. If the input exceeds 10 digits, an error message is displayed.
+
+       Navigation: Upon entering valid details, users are redirected to the Location Tracker Page.
+
+2. Location Tracker Page:-
+
+       Purpose: Fetches the user's current geographical location using the browser's Geolocation API.
+
+       Map Display: Shows the user's location on a Google Maps embedded frame, based on latitude and longitude.
+
+       Error Handling: If location services are unavailable or permission is denied, an error message is shown.
+
+       Navigation: Users can navigate to the Manage Contacts Page using a button.
+
+3. Manage Contacts Page:-
+
+       Purpose: Allows users to add, edit, and delete emergency contacts.
+
+       Contact Management:
+
+         i.)Add/Edit Contacts: Users can add new contacts by entering a name and a 10-digit phone number. Contacts can also be edited.
+
+         ii.)Delete Contacts: Provides a button to remove a contact.
+
+      Error Handling: Ensures that the entered phone number doesn't exceed 10 digits, displaying an error message if it does.
+
+      Location Sharing:
+         Users can select a contact and click a button to share their current location.
+         The location is shared as a Google Maps link containing the user's latitude and longitude.
+         After sharing the location, a success message with a tick mark is displayed.
+
+      Navigation: Includes a button to return to the Location Tracker Page.
+
+4. Additional Features
+
+      Phone Number Validation: Integrated across both the user login and manage contacts page to ensure consistency.
+
+      Local Storage: Stores contacts using local storage to persist the data even after refreshing the page.
+
+      Success Feedback: Provides visual feedback when actions like sharing a location are completed successfully.
+
+      Responsive Design: The application uses CSS for basic styling and is designed to be responsive on various screen sizes.
+
+Technologies Used:-
+
+      React: For building the user interface and handling state management.
+
+      JavaScript: For handling geolocation data and dynamic interactions.
+
+      Google Maps Embed API: To display the user's location on a map.
+
+      CSS: For styling the components and ensuring a user-friendly interface.
+
+Overall Flow of the project:-
+
+     * User logs in by entering their name and phone number.
+     * They are taken to the Location Tracker Page, which shows their current location.
+     * From there, they can go to Manage Contacts, add emergency contacts, and send their location to a selected contact.
+     * After sharing the location, they receive confirmation that the message was successfully sent.
